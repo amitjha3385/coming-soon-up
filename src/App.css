@@ -1,38 +1,214 @@
+@media (min-width: 768px ) and (max-width: 990px) {
+  .HowItWorksCard {
+    height: 45vh !important;
+  }
+}
+@media (min-width: 990px ) and (max-width: 1200px) {
+  .HowItWorksCard {
+    height: 35vh !important;
+  }
+}
+
+@media (min-width: 760px) {
+  .mobile-title-image {
+    display: none !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .fullscreen-video-wrap {
+    display: none !important;
+  }
+  .toolbar {
+    display: none !important;
+  }
+}
+/* Logo Media Queries */
+@media (max-width: 759px) {
+  .company-logo {
+    width: 30vw !important;
+  }
+}
+@media (min-width: 760px) and (max-width: 1025px){
+  .company-logo {
+    width: 15vw !important;
+  }
+}
+@media (min-width: 1026px) {
+  .company-logo {
+    width: 10vw !important;
+  }
+}
+
 .App {
+  font-family: 'Hind Madurai', 'Play', 'Prompt', 'Cairo';
+}
+.App-header {
+  position: relative;
+  text-align: center;
+  color: aliceblue;
+  height: 80vh;
+}
+.fullscreen-video-wrap{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.background-video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.mobile-title-image {
+  object-fit: cover;
+  width: 100%;
+  height: 80vh;
+}
+
+.toolbar {
+  position: absolute;
+  bottom: 0;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.play-pause-icon {
+  height: 100%;
+  width: auto;
+}
+
+#play-pause {
+  width: 100px;
+  height: 60px;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#play-pause:hover {
+  background: #ddd;
+}
+
+.title-section {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title-slogan {
+  position: relative;
+  z-index : 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title-slogan:before {
+  content : "";
+  position: absolute;
+  left    : 25%;
+  bottom  : 0;
+  height  : 1px;
+  width   : 50%;  
+  border-bottom: 2px solid greenyellow;
+}
+.title-subtitle {
+  padding-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.main-blurb {
+  text-align: center;
+  padding-top: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sub-heading {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index : 1;
+}
+
+.sub-heading:before {
+  content : "";
+  position: absolute;
+  left    : 25%;
+  bottom  : 0;
+  height  : 1px;
+  width   : 50%;  
+  border-bottom: 2px solid greenyellow;
+}
+
+.howitworks {
+  background-color: #f0f0f0;
+}
+.HowItWorksCard {
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.team-card {
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.team-card-title {
+  padding: 0.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: large;
+  position: relative;
+  z-index : 1;
+}
+
+.team-card-content {
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.list-team-members ul {
+  list-style-type: none;
+  padding-inline-start: 1rem;
+}
+
+.section {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer{
+  padding-top: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.coming-soon {
+  font-family: 'Handlee', 'Hind-Madurai';
+  color : #80541c;
+  font-size: 1.25rem;
+  padding-left: 1rem;
+  font-weight: bolder;
+}
+
+.contact-main-nav {
+  color : #80541c;
+}
+
+.card-header {
+  font-size: 1.25rem;
 }
